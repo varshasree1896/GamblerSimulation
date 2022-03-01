@@ -19,11 +19,13 @@ public class GamblerSimulation {
         switch (choice) {
             case 0:
                 System.out.println("Gambler win the bet");
-                System.out.println(("Amount = " + (money = stake+bet)));
+                System.out.println(("Amount after winning is = " + (money = stake+(stake/2))));
+
                 break;
             case 1:
                 System.out.println("Gambler loose the bet");
-                System.out.println(("Amount = " + (money = stake-bet)));
+                System.out.println(("Amount after loosing is = " + (money = stake-(stake/2))));
+
                 break;
         }
     }
